@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <!-- Título de Bienvenida -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#ED1C24"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Campo de Usuario -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu usuario"
+        android:padding="10dp"
+        android:background="@drawable/input_background"
+        android:textColor="#000000"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Campo de Contraseña -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:id="@+id/etContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu contraseña"
+        android:padding="10dp"
+        android:background="@drawable/input_background"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Botón de Login -->
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ED1C24"
+        android:textColor="#FFFFFF"
+        android:text="Ingresar"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Enlace de Registro -->
+    <TextView
+        android:id="@+id/registerLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿No tienes cuenta? Regístrate aquí"
+        android:textSize="14sp"
+        android:textColor="#4A4A4A"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:focusable="true" />
+</LinearLayout>
